@@ -1,0 +1,34 @@
+{
+  "required": false,
+  "package": "me.inf32768.ultimatescaler.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "UltimateScaler-refmap.json",
+  "mixins": [
+    "MixinAquiferSampler",
+    "MixinDimensionType",
+    "MixinEntity",
+    "MixinInterpolatedNoiseSampler",
+    "MixinLinkedBlockPosHashSetStorage",
+    "MixinMinecraftServer",
+    "MixinOctavePerlinNoiseSampler",
+    "MixinPlayerEntity",
+    "MixinServerPlayNetWorkHandler",
+    "MixinShardFarlands",
+    "MixinWorld",
+    "MixinWorldBorder",
+    "MixinWorldBorderCommand",
+    "MixinWorldBorderProperties",
+    "MixinWorldView",
+    "offset.MixinChunk",
+    "offset.MixinChunkNoiseSampler",
+    "offset.MixinChunkRandom"
+  ],
+  "client": [
+    "options.IMixinGridWidget",
+    "options.IMixinScreen",
+    "options.MixinOptionsScreen"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,35 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "borderremover",
+  "id": "ultimatescaler",
   "version": "${version}",
 
-  "name": "Border Remover",
-  "description": "Minecraft mod for removing the 30,000,000 block limit and (optionally) brings back the farlands",
+  "name": "Ultimate Scaler",
+  "description": "A Minecraft mod for removing the 30,000,000 block limit, (optionally) brings back the farlands and scale the terrain generation.",
   "authors": [
+    "INF32768",
     "PercyDan"
   ],
   "contact": {
-    "homepage": "https://github.com/PercyDan54/BorderRemover",
-    "sources": "https://github.com/PercyDan54/BorderRemover",
-    "issues": "https://github.com/PercyDan54/BorderRemover/issues"
+    "homepage": "https://github.com/INF32768/UltimateScaler",
+    "sources": "https://github.com/INF32768/UltimateScaler",
+    "issues": "https://github.com/INF32768/UltimateScaler/issues"
   },
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.percydan.borderremover.BorderRemover"
+      "me.inf32768.ultimatescaler.UltimateScaler"
     ],
     "modmenu": [
-      "me.percydan.borderremover.config.ModMenuIntegration"
+      "me.inf32768.ultimatescaler.config.ModMenuIntegration"
     ]
   },
   "mixins": [
-    "mixins.borderremover.json"
+    "mixins.ultimatescaler.json"
   ],
-  "accessWidener": "borderremover.accesswidener",
+  "accessWidener": "ultimatescaler.accesswidener",
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.16.7",
     "cloth-config2": "*",
     "fabric": "*",
-    "minecraft": ">=1.19.3"
+    "minecraft": ">=1.21.2"
   }
 }

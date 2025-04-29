@@ -1,0 +1,10 @@
+{
+  "text.autoconfig.ultimatescaler.title": "世界生成设置",
+  "text.autoconfig.ultimatescaler.option.enableFarlands": "生成边境之地",
+  "text.autoconfig.ultimatescaler.option.shardFarlands": "生成碎片边境之地",
+  "text.autoconfig.ultimatescaler.option.genOffset": "（OldBlendedNoise）生成偏移（区块）",
+  "text.autoconfig.ultimatescaler.option.xzCoordinateScale": "（OldBlendedNoise）基准 X/Z 坐标比例",
+  "text.autoconfig.ultimatescaler.option.yCoordinateScale": "（OldBlendedNoise）基准 Y 坐标比例",
+  "text.autoconfig.ultimatescaler.option.xzScaleMultiplier": "（OldBlendedNoise）X/Z 坐标缩放倍率",
+  "text.autoconfig.ultimatescaler.option.yScaleMultiplier": "（OldBlendedNoise）Y 坐标缩放倍率"
+}

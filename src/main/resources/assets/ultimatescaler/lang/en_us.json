@@ -1,0 +1,10 @@
+{
+  "text.autoconfig.ultimatescaler.title": "World generation settings",
+  "text.autoconfig.ultimatescaler.option.enableFarlands": "Enable farlands",
+  "text.autoconfig.ultimatescaler.option.shardFarlands": "Shard farlands",
+  "text.autoconfig.ultimatescaler.option.genOffset": "Terrain generation offset",
+  "text.autoconfig.ultimatescaler.option.xzCoordinateScale": "X/Z coordinate scale",
+  "text.autoconfig.ultimatescaler.option.yCoordinateScale": "Y coordinate scale",
+  "text.autoconfig.ultimatescaler.option.xzScaleMultiplier": "X/Z coordinate scale multiplier",
+  "text.autoconfig.ultimatescaler.option.yScaleMultiplier": "Y coordinate scale multiplier"
+}

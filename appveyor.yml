@@ -1,8 +1,8 @@
-version: 1.0.{build}
+version: 0.0.{build}
 clone_depth: 1
 skip_tags: true
 environment:
-  JAVA_HOME: C:\Program Files\Java\jdk17
+  JAVA_HOME: C:\Program Files\Java\jdk21
 cache:
 - C:\Users\appveyor\.gradle\caches\fabric-loom
 - C:\Users\appveyor\.gradle\caches\modules-2\
@@ -10,14 +10,14 @@ build_script:
 - cmd: gradlew build
 test: off
 artifacts:
-- path: .\build\libs\BorderRemover-1.0.9.jar
-  name: BorderRemover-1.0.9.jar
-- path: .\build\devlibs\BorderRemover-1.0.9-sources.jar
-  name: BorderRemover-1.0.9-sources.jar
+- path: .\build\libs\UltimateScaler-0.0.0.jar
+  name: UltimateScaler-0.0.0.jar
+- path: .\build\devlibs\UltimateScaler-0.0.0-sources.jar
+  name: UltimateScaler-0.0.0-sources.jar
 deploy:
 - provider: GitHub
-  tag: 1.0.9
+  tag: 0.0.0
   auth_token:
     secure: EEbZ2OGaIPcjhGpQGzfE80TbrG14UiTPGNnQjMIKD5wzrYPQ4Kyhb3qLzMNahL1I
-  repository: PercyDan54/BorderRemover
-  artifact: BorderRemover-1.0.9.jar, BorderRemover-1.0.9-sources.jar
+  repository: INF32768/UltimateScaler
+  artifact: UltimateScaler-0.0.0.jar, UltimateScaler-0.0.0-sources.jar
