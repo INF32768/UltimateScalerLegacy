@@ -5,6 +5,7 @@
   "refmap": "UltimateScaler-refmap.json",
   "mixins": [
     "MixinAquiferSampler",
+    "MixinChunkPos",
     "MixinDimensionType",
     "MixinEntity",
     "MixinInterpolatedNoiseSampler",
