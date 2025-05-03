@@ -5,15 +5,16 @@ import me.inf32768.ultimatescaler.UltimateScaler;
 import me.inf32768.ultimatescaler.config.WorldGenOptions;
 import net.minecraft.util.math.noise.InterpolatedNoiseSampler;
 import net.minecraft.util.math.noise.OctavePerlinNoiseSampler;
+import net.minecraft.world.gen.densityfunction.DensityFunction;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Constant;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.ModifyConstant;
+import org.spongepowered.asm.mixin.gen.Accessor;
+import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import static me.inf32768.ultimatescaler.UltimateScaler.config;
 
 @Mixin(InterpolatedNoiseSampler.class)
 public abstract class MixinInterpolatedNoiseSampler {
@@ -82,4 +83,28 @@ public abstract class MixinInterpolatedNoiseSampler {
         } catch (NumberFormatException e) {
         }
     }
+
+    @ModifyVariable(method = "sample", at = @At("STORE"), ordinal = 0)
+    private double modifyBlockX(double x, DensityFunction.NoisePos pos) {
+        // 修改 x 坐标
+        return ((double) pos.blockX() * config.globalXScale + config.globalXOffset) * getScaledXzScale();
+    }
+
+    @ModifyVariable(method = "sample", at = @At("STORE"), ordinal = 1)
+    private double modifyBlockY(double y, DensityFunction.NoisePos pos) {
+        // 修改 y 坐标
+        return ((double) pos.blockY() * config.globalYScale + config.globalYOffset) * getScaledYScale();
+    }
+
+    @ModifyVariable(method = "sample", at = @At("STORE"), ordinal = 2)
+    private double modifyBlockZ(double z, DensityFunction.NoisePos pos) {
+        // 修改 z 坐标
+        return ((double) pos.blockZ() * config.globalZScale + config.globalZOffset) * getScaledXzScale();
+    }
+
+    @Accessor("scaledXzScale")
+    abstract double getScaledXzScale();
+
+    @Accessor("scaledYScale")
+    abstract double getScaledYScale();
 }

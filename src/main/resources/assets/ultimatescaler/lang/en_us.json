@@ -6,5 +6,11 @@
   "text.autoconfig.ultimatescaler.option.xzCoordinateScale": "X/Z coordinate scale",
   "text.autoconfig.ultimatescaler.option.yCoordinateScale": "Y coordinate scale",
   "text.autoconfig.ultimatescaler.option.xzScaleMultiplier": "X/Z coordinate scale multiplier",
-  "text.autoconfig.ultimatescaler.option.yScaleMultiplier": "Y coordinate scale multiplier"
+  "text.autoconfig.ultimatescaler.option.yScaleMultiplier": "Y coordinate scale multiplier",
+  "text.autoconfig.ultimatescaler.option.globalXScale": "Global X coordinate scale",
+  "text.autoconfig.ultimatescaler.option.globalZScale": "Global Z coordinate scale",
+  "text.autoconfig.ultimatescaler.option.globalYScale": "Global Y coordinate scale",
+  "text.autoconfig.ultimatescaler.option.globalXOffset": "Global X coordinate offset",
+  "text.autoconfig.ultimatescaler.option.globalZOffset": "Global Z coordinate offset",
+  "text.autoconfig.ultimatescaler.option.globalYOffset": "Global Y coordinate offset"
 }
