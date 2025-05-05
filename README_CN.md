@@ -38,7 +38,7 @@ Forked from [PercyDan54/BorderRemover](https://github.com/PercyDan54/BorderRemov
 
 * `caloffset`：定位一个缩放和偏移过的新位置，范围在 -1E22 和 1E22 之间。  
     * 语法：`/caloffset <originalPos> <scale> <offset>`  
-      * `<originalPos>`：int/String，原本的 X/Y/Z 坐标。
+    * `<originalPos>`：int/String，原本的 X/Y/Z 坐标。
     * `<scale>`：double，缩放因子。
     * `<offset>`：double，偏移量。
     * 示例：当没有偏移或缩放时，在 X/Z 轴的 607949781904244613165613056 处会生成一个特殊地形，我想知道当 X 轴的缩放为 4.5E8 且偏移量为 607949781904244603165613056 时该地形生成的位置，我可以使用 `/caloffset 607949781904244613165613056 450000000 607949781904244603165613056` 来获取新位置。此命令输出 77，这意味着此地形在 X 轴上的 77 处生成。
