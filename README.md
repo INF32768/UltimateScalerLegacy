@@ -1,18 +1,45 @@
 # Ultimate Scaler
-A Minecraft mod for removing the 30,000,000 block limit, (optionally) brings back the farlands and scale the terrain generation.
+**English** | [简体中文](README_CN.md)  
 
-Forked from [PercyDan54/BorderRemover](https://github.com/PercyDan54/BorderRemover)
+A Minecraft mod for removing the 30,000,000 block limit, (optionally) brings back the farlands and scale the terrain generation.  
 
-[![](https://z3.ax1x.com/2021/08/02/fpgDCq.png)](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-[![](https://z3.ax1x.com/2021/08/02/fpgr80.png)](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
-![](https://z3.ax1x.com/2021/08/02/fpwnBt.png)
+Forked from [PercyDan54/BorderRemover](https://github.com/PercyDan54/BorderRemover)  
+
+[![](https://z3.ax1x.com/2021/08/02/fpgDCq.png)](https://www.curseforge.com/minecraft/mc-mods/fabric-api) [![](https://z3.ax1x.com/2021/08/02/fpgr80.png)](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
+![](https://s21.ax1x.com/2025/05/05/pEqlkt0.png)
 ## Settings
-`Enable farlands`: As its name saids
 
-`Terrain Generation offset`: Offsets the `ChunkPos` used to generate terrain. Set to `0` to disable modifying.
+* `Enable farlands`: Moves the farlands to the nearer distance (first layer 12550824).    
 
-Take the coordinate you need and divide it by 16 to get the ChunkPos
+* `Shard farlands`: Changes the _double_ datatype used in the perlin noise to _float_ to shatter the terrain.  
 
-`Y / XZ Scale`: Modifies the Y / XZ coordinate scale multiplier. Set to `default` to disable modifying.
+* ~~`Terrain Generation offset`~~: Offsets the `ChunkPos` used to generate terrain. Set to `0` to disable modifying.  
 
-Set `Y Scale` to `262144` to get the sky far lands(if enabled)
+    * Take the coordinate you need and divide it by 16 to get the ChunkPos.  
+
+    * This option is not recommended as it may cause unpredictable issues.  
+
+* `[OldBlendedNoise] Y / XZ Scale (multiplier)`: Modifies the Y / XZ coordinate scale multiplier used in the density function: "minecraft:OldBlendedNoise". Set to `default` to disable modifying.
+
+    * Requires to reload the world for the changes to take effect.  
+
+* `Global X/Z/Y Scale / Offset`: Scale or offset most terrain generation.  
+
+    * This option currently only affects Noise and OldBlendedNoise.  
+
+    * It will be able to affect almost entire terrain generation in the future.  
+
+## Debug HUD
+
+* Added a line `TerrainXYZ` to the debug HUD to show the current position of terrain generation.    
+![](https://s21.ax1x.com/2025/05/05/pEq1jsg.png)
+
+## Commands
+
+* `caloffset`: Locate a new location between -1E22 and 1E22 that has been scaled and offset.  
+    * Syntax: `/caloffset <originalPos> <scale> <offset>`  
+    * `<originalPos>`: int/String, The original position on one axis.  
+    * `<scale>`: double, The scale factor.  
+    * `<offset>`: double, The offset.  
+    * Example: A special terrain generates at 607949781904244613165613056 on X/Z axis when there is no offset nor scale, I would like to know where this terrain is generated when the scale of the X axis is 4.5E8 and the offset is 607949781904244603165613056, I can use `/caloffset 607949781904244613165613056 450000000 607949781904244603165613056` to get the new position. This command outputs 77, meaning this terrain is generated at 77 on X axis.  
+    * This command is not useful when the coordinate is small, but it is useful when the coordinate is very large and affected by precision loss.  

@@ -2,15 +2,17 @@
   "text.autoconfig.ultimatescaler.title": "世界生成设置",
   "text.autoconfig.ultimatescaler.option.enableFarlands": "生成边境之地",
   "text.autoconfig.ultimatescaler.option.shardFarlands": "生成碎片边境之地",
-  "text.autoconfig.ultimatescaler.option.genOffset": "（OldBlendedNoise）生成偏移（区块）",
-  "text.autoconfig.ultimatescaler.option.xzCoordinateScale": "（OldBlendedNoise）基准 X/Z 坐标比例",
-  "text.autoconfig.ultimatescaler.option.yCoordinateScale": "（OldBlendedNoise）基准 Y 坐标比例",
-  "text.autoconfig.ultimatescaler.option.xzScaleMultiplier": "（OldBlendedNoise）X/Z 坐标缩放倍率",
-  "text.autoconfig.ultimatescaler.option.yScaleMultiplier": "（OldBlendedNoise）Y 坐标缩放倍率",
+  "text.autoconfig.ultimatescaler.option.genOffset": "【已弃用】生成偏移（区块）",
+  "text.autoconfig.ultimatescaler.option.xzCoordinateScale": "【OldBlendedNoise】基准 X/Z 坐标比例",
+  "text.autoconfig.ultimatescaler.option.yCoordinateScale": "【OldBlendedNoise】基准 Y 坐标比例",
+  "text.autoconfig.ultimatescaler.option.xzScaleMultiplier": "【OldBlendedNoise】X/Z 坐标比例倍率",
+  "text.autoconfig.ultimatescaler.option.yScaleMultiplier": "【OldBlendedNoise】Y 坐标比例倍率",
   "text.autoconfig.ultimatescaler.option.globalXScale": "全局 X 坐标缩放",
   "text.autoconfig.ultimatescaler.option.globalZScale": "全局 Z 坐标缩放",
   "text.autoconfig.ultimatescaler.option.globalYScale": "全局 Y 坐标缩放",
   "text.autoconfig.ultimatescaler.option.globalXOffset": "全局 X 坐标偏移",
   "text.autoconfig.ultimatescaler.option.globalZOffset": "全局 Z 坐标偏移",
-  "text.autoconfig.ultimatescaler.option.globalYOffset": "全局 Y 坐标偏移"
+  "text.autoconfig.ultimatescaler.option.globalYOffset": "全局 Y 坐标偏移",
+  "command.exception.scale_zero": "缩放不能为零",
+  "command.exception.not_found": "无法在合理距离内找到该坐标"
 }

@@ -10,14 +10,14 @@ build_script:
 - cmd: gradlew build
 test: off
 artifacts:
-- path: .\build\libs\UltimateScaler-0.0.2.jar
-  name: UltimateScaler-0.0.2.jar
-- path: .\build\devlibs\UltimateScaler-0.0.2-sources.jar
-  name: UltimateScaler-0.0.2-sources.jar
+- path: .\build\libs\UltimateScaler-0.1.0.jar
+  name: UltimateScaler-0.1.0.jar
+- path: .\build\devlibs\UltimateScaler-0.1.0-sources.jar
+  name: UltimateScaler-0.1.0-sources.jar
 deploy:
 - provider: GitHub
-  tag: 0.0.2
+  tag: 0.1.0
   auth_token:
     secure: EEbZ2OGaIPcjhGpQGzfE80TbrG14UiTPGNnQjMIKD5wzrYPQ4Kyhb3qLzMNahL1I
   repository: INF32768/UltimateScaler
-  artifact: UltimateScaler-0.0.2.jar, UltimateScaler-0.0.2-sources.jar
+  artifact: UltimateScaler-0.1.0.jar, UltimateScaler-0.1.0-sources.jar

@@ -1,3 +1,7 @@
+/*
+    Doesn't seem to be effective, but it's here just in case.
+*/
+
 package me.inf32768.ultimatescaler.mixins;
 
 import net.minecraft.util.math.ChunkSectionPos;

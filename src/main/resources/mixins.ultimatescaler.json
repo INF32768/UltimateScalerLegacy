@@ -7,15 +7,17 @@
     "MixinAquiferSampler",
     "MixinChunkPos",
     "MixinDimensionType",
-    "MixinDoublePerlinNoiseSampler",
     "MixinEntity",
     "MixinInterpolatedNoiseSampler",
     "MixinLinkedBlockPosHashSetStorage",
     "MixinMinecraftServer",
+    "MixinNoiseSampler",
     "MixinOctavePerlinNoiseSampler",
     "MixinPlayerEntity",
     "MixinServerPlayNetWorkHandler",
     "MixinShardFarlands",
+    "MixinShiftedNoiseSampler",
+    "MixinShiftSampler",
     "MixinWorld",
     "MixinWorldBorder",
     "MixinWorldBorderCommand",
@@ -26,6 +28,7 @@
     "offset.MixinChunkRandom"
   ],
   "client": [
+    "MixinDebugHud",
     "options.IMixinGridWidget",
     "options.IMixinScreen",
     "options.MixinOptionsScreen"
