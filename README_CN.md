@@ -23,11 +23,11 @@ Forked from [PercyDan54/BorderRemover](https://github.com/PercyDan54/BorderRemov
 
     * 需要重新加载世界使更改生效。  
 
-  * `全局 X/Y/Z 缩放/偏移`：缩放或偏移大多数地形生成。
+* `全局 X/Y/Z 缩放/偏移`：缩放或偏移大多数地形生成。
 
-      * 这个选项目前只影响 Noise 和 OldBlendedNoise。  
+    * 这个选项目前只影响 Noise 和 OldBlendedNoise。  
 
-      * 在未来，这个选项将影响几乎整个地形生成。  
+    * 在未来，这个选项将影响几乎整个地形生成。  
 
 ## 调试屏幕
 
