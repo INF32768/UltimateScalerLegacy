@@ -36,10 +36,11 @@ Forked from [PercyDan54/BorderRemover](https://github.com/PercyDan54/BorderRemov
 
 ## Commands
 
-* `caloffset`: Locate a new location between -1E22 and 1E22 that has been scaled and offset.  
-    * Syntax: `/caloffset <originalPos> <scale> <offset>`  
+* `locate pos`: Use dichotomies to locate a location that has been scaled and offset.  
+    * Syntax: `/locate pos <originalPos> <scale> <offset> [range]`  
     * `<originalPos>`: int/String, The original position on one axis.  
-    * `<scale>`: double, The scale factor.  
+    * `<scale>`: double, The scale factor, must be greater than 0.  
     * `<offset>`: double, The offset.  
-    * Example: A special terrain generates at 607949781904244613165613056 on X/Z axis when there is no offset nor scale, I would like to know where this terrain is generated when the scale of the X axis is 4.5E8 and the offset is 607949781904244603165613056, I can use `/caloffset 607949781904244613165613056 450000000 607949781904244603165613056` to get the new position. This command outputs 77, meaning this terrain is generated at 77 on X axis.  
+    * `[range]`: double, The range of the search. Default is `Double.MAX_VALUE / scale - offset`.  
+    * Example: A special terrain generates at 607949781904244613165613056 on X/Z axis when there is no offset nor scale, I would like to know where this terrain is generated when the scale of the X axis is 4.5E8 and the offset is 607949781904244603165613056, I can use `/caloffset 607949781904244613165613056 450000000 607949781904244603165613056` to get the new position. This command outputs 77, meaning this terrain is generated at 77 on X axis when scaled and offset.  
     * This command is not useful when the coordinate is small, but it is useful when the coordinate is very large and affected by precision loss.  

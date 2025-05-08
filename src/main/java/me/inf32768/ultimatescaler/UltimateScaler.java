@@ -1,6 +1,6 @@
 package me.inf32768.ultimatescaler;
 
-import me.inf32768.ultimatescaler.commands.CalculateOffset;
+import me.inf32768.ultimatescaler.commands.LocatePosition;
 import me.inf32768.ultimatescaler.commands.Flyspeed;
 import me.inf32768.ultimatescaler.config.WorldGenOptions;
 import me.shedaniel.autoconfig.AutoConfig;
@@ -13,7 +13,7 @@ public class UltimateScaler implements ModInitializer {
     @Override
     public void onInitialize() {
         Flyspeed.init();
-        CalculateOffset.init();
+        LocatePosition.init();
 
         AutoConfig.register(WorldGenOptions.class, Toml4jConfigSerializer::new);
         config = AutoConfig.getConfigHolder(WorldGenOptions.class).getConfig();

@@ -1,23 +1,15 @@
-version: 0.0.{build}
-clone_depth: 1
+version: '{build}'
 skip_tags: true
+clone_depth: 1
 environment:
   JAVA_HOME: C:\Program Files\Java\jdk21
 cache:
-- C:\Users\appveyor\.gradle\caches\fabric-loom
-- C:\Users\appveyor\.gradle\caches\modules-2\
+  - C:\Users\appveyor\.gradle\caches\fabric-loom
+  - C:\Users\appveyor\.gradle\caches\modules-2\
 build_script:
-- cmd: gradlew build
-test: off
+  - cmd: gradlew build
 artifacts:
-- path: .\build\libs\UltimateScaler-0.1.0.jar
-  name: UltimateScaler-0.1.0.jar
-- path: .\build\devlibs\UltimateScaler-0.1.0-sources.jar
-  name: UltimateScaler-0.1.0-sources.jar
-deploy:
-- provider: GitHub
-  tag: 0.1.0
-  auth_token:
-    secure: EEbZ2OGaIPcjhGpQGzfE80TbrG14UiTPGNnQjMIKD5wzrYPQ4Kyhb3qLzMNahL1I
-  repository: INF32768/UltimateScaler
-  artifact: UltimateScaler-0.1.0.jar, UltimateScaler-0.1.0-sources.jar
+  - path: .\build\libs\UltimateScaler-0.1.1.jar
+    name: UltimateScaler-0.1.1.jar
+  - path: .\build\devlibs\UltimateScaler-0.1.1-sources.jar
+    name: UltimateScaler-0.1.1-sources.jar
