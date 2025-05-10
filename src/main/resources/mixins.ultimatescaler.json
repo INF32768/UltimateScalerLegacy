@@ -2,7 +2,7 @@
   "required": false,
   "package": "me.inf32768.ultimatescaler.mixins",
   "compatibilityLevel": "JAVA_21",
-  "refmap": "UltimateScaler-refmap.json",
+  "refmap": "ultimatescaler-refmap.json",
   "mixins": [
     "MixinAquiferSampler",
     "MixinChunkPos",

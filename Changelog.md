@@ -30,4 +30,10 @@
 
 ### Bug Fixes
 - Fixed that `shift` density function could not be scaled properly.  
-- Corrected the typos in `README.md`.  
+- Corrected the typos in `README.md`. 
+
+
+## 0.1.2.1 - 2025-5-10
+
+### Bug Fixes
+- Corrected the case in the configuration file which was causing the game to crash.
