@@ -24,3 +24,10 @@
 
 ### Bug Fixes
 - Fixed a bug where the `locate pos` command would get stuck in an infinite loop in some cases.  
+
+
+## 0.1.2 - 2025-5-10
+
+### Bug Fixes
+- Fixed that `shift` density function could not be scaled properly.  
+- Corrected the typos in `README.md`.  

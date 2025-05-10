@@ -6,5 +6,7 @@ accessible class net/minecraft/util/collection/LinkedBlockPosHashSet$Storage
 accessible class net/minecraft/world/gen/chunk/AquiferSampler$FluidLevel
 accessible class net/minecraft/world/gen/densityfunction/DensityFunctionTypes$Noise
 accessible class net/minecraft/world/gen/densityfunction/DensityFunctionTypes$ShiftedNoise
-accessible class net/minecraft/world/gen/densityfunction/DensityFunctionTypes$Shift
 accessible class net/minecraft/world/gen/densityfunction/DensityFunctionTypes$Offset
+accessible class net/minecraft/world/gen/densityfunction/DensityFunctionTypes$Shift
+accessible class net/minecraft/world/gen/densityfunction/DensityFunctionTypes$ShiftA
+accessible class net/minecraft/world/gen/densityfunction/DensityFunctionTypes$ShiftB
