@@ -1,3 +1,5 @@
+_This repository has been archived, please visit the new repository [UltimateScaler](https://github.com/INF32768/UltimateScaler)._  
+
 # Ultimate Scaler
 **English** | [简体中文](README_CN.md)  
 

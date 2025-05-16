@@ -1,3 +1,5 @@
+_此仓库已存档，请移步至[新仓库](https://github.com/INF32768/UltimateScaler)。_  
+
 # Ultimate Scaler
 [English](README.md) | **简体中文**
 
